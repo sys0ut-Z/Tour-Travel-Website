@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .container{
+    @apply mx-auto p-[1rem] sm:px-[2rem];
+  }
+  
+  /* ^ date calendar indicator */
+  .date-indicator::-webkit-calendar-picker-indicator{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  /* ^ background of ball(thumb) slider */
+  .price-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    width: 100%;
+    border-radius: 6px;
+    @apply bg-gradient-to-r from-primary to-secondary;
+  }
+
+  /* ^ custom slider ball(thumb) */
+  .price-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+    background: #ddd;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+  }
+}
