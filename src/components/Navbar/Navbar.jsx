@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Logo from '../../assets/Logo.png'
+import Logo from '../../assets/logo.png'
 import { Link, NavLink } from 'react-router'
 import { FaCaretDown} from 'react-icons/fa'
 import {HiMenuAlt1, HiMenuAlt3} from 'react-icons/hi';
